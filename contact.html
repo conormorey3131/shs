@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sixmilebridge Historical Society</title>
+    <link rel="icon" href="SMB Historical Society Logo PNG.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="index.html"><img src="SMB Historical Society Logo PNG.png" alt="Sixmilebridge Historical Society Logo" id="logo"></a>
+                <h1>Sixmilebridge Historical Society</h1>
+            </div>
+            <nav>
+                <div class="hamburger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact-info">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you! Whether you have a query about our society, an event, our collections, or wish to become a member, please don't hesitate to reach out.</p>
+
+                <div class="contact-details">
+                    <p><strong>Email:</strong> <a href="mailto:info@sixmilebridgehistoricalsociety.example.com">info@sixmilebridgehistoricalsociety.example.com</a> (Placeholder)</p>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <div class="container">
+                <h3>Send Us a Message</h3>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success"> <!-- Optional: Custom success page -->
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <p><small>Note: This form will be functional once you replace "YOUR_ACCESS_KEY_HERE" with your actual Access Key from <a href="https://web3forms.com/" target="_blank">web3forms.com</a> or a similar service.</small></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-media-links">
+                <ul>
+                    <li><a href="https://www.facebook.com/sixmilebridgelocalhistory" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <p>&copy; 2025 Sixmilebridge Historical Society. All Rights Reserved.</p>
+            <p class="powered-by">Powered by <a href="https://moreydigital.ie" target="_blank" rel="noopener noreferrer">Morey Digital</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
