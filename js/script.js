@@ -32,4 +32,28 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Intersection Observer for fade-in animations
+    const sectionsToFade = document.querySelectorAll('.fade-in-section');
+    if (sectionsToFade.length > 0) {
+        const observerOptions = {
+            root: null, // relative to the viewport
+            rootMargin: '0px',
+            threshold: 0.1 // 10% of the item is visible
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Optional: stop observing once visible
+                }
+            });
+        };
+
+        const fadeInObserver = new IntersectionObserver(observerCallback, observerOptions);
+        sectionsToFade.forEach(section => {
+            fadeInObserver.observe(section);
+        });
+    }
 });
