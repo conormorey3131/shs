@@ -1,0 +1,88 @@
+{
+  "name": "Sixmilebridge Historical Society",
+  "short_name": "Sixmilebridge History",
+  "description": "Preserving and promoting the rich history and heritage of Sixmilebridge and surrounding areas in County Clare, Ireland",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#3A4D39",
+  "theme_color": "#3A4D39",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/SMB Historical Society Logo PNG.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "lang": "en-IE",
+  "dir": "ltr",
+  "categories": ["education", "history", "community"],
+  "screenshots": [
+    {
+      "src": "/images/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop view of Sixmilebridge Historical Society website"
+    },
+    {
+      "src": "/images/screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Mobile view of Sixmilebridge Historical Society website"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "View Events",
+      "short_name": "Events",
+      "description": "View upcoming historical society events",
+      "url": "/events.html",
+      "icons": [{ "src": "/images/SMB Historical Society Logo PNG.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Photo Gallery",
+      "short_name": "Gallery",
+      "description": "Browse historical photos",
+      "url": "/gallery.html",
+      "icons": [{ "src": "/images/SMB Historical Society Logo PNG.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with the society",
+      "url": "/contact.html",
+      "icons": [{ "src": "/images/SMB Historical Society Logo PNG.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

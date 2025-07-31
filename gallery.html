@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IE">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Sixmilebridge Historical Society</title>
+    <title>Historical Photo Gallery - Sixmilebridge Heritage Images | County Clare</title>
+    <meta name="description" content="Browse our collection of historical photographs showcasing Sixmilebridge's rich heritage, including the castle, old mills, schools, and parish walks in County Clare, Ireland.">
+    <meta name="keywords" content="Sixmilebridge photos, historical images Clare, Irish heritage gallery, old photographs Ireland, local history pictures">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://sixmilebridgehistoricalsociety.ie/gallery.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Historical Photo Gallery - Sixmilebridge Heritage">
+    <meta property="og:description" content="Explore our collection of historical photographs from Sixmilebridge and County Clare.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sixmilebridgehistoricalsociety.ie/images/castle.png">
     <link rel="icon" href="images/SMB Historical Society Logo PNG.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
@@ -38,31 +48,74 @@
                 <h2>Photo Gallery</h2>
                 <p>A collection of historical photographs and images related to Sixmilebridge and its heritage. (More images and categories will be added soon.)</p>
 
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/castle.png" alt="Sixmilebridge Castle">
-                        <p>Sixmilebridge Castle</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/machine.jpg" alt="Old Machinery">
-                        <p>Historical Machinery</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/p_walk.jpg" alt="Parish Walk">
-                        <p>Local Parish Walk</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/school.jpg" alt="Old School Building">
-                        <p>The Old School</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/logo.jpg" alt="Society Logo Detail">
-                        <p>Historical Society Emblem</p>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="images/SMB Historical Society Logo-Jpg Mid Res.jpg" alt="Society Logo Medium Resolution">
-                        <p>Society Logo</p>
-                    </div>
+                <div class="gallery-grid" itemscope itemtype="https://schema.org/ImageGallery">
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/castle.png" 
+                             alt="Sixmilebridge Castle - Historic medieval fortification in County Clare, Ireland" 
+                             title="Sixmilebridge Castle - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">Sixmilebridge Castle - Medieval Heritage Site</figcaption>
+                        <meta itemprop="keywords" content="Sixmilebridge Castle, medieval Ireland, County Clare castles">
+                        <meta itemprop="datePublished" content="2020-01-01">
+                    </figure>
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/machine.jpg" 
+                             alt="Historical machinery used in Sixmilebridge mills and industry - vintage industrial equipment" 
+                             title="Old Mill Machinery - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">Historical Mill Machinery - Industrial Heritage</figcaption>
+                        <meta itemprop="keywords" content="Sixmilebridge mills, industrial heritage, vintage machinery Ireland">
+                    </figure>
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/p_walk.jpg" 
+                             alt="Traditional parish walk through historic Sixmilebridge - community heritage trail" 
+                             title="Parish Heritage Walk - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">Traditional Parish Walk - Community Heritage Trail</figcaption>
+                        <meta itemprop="keywords" content="parish walks Ireland, Sixmilebridge trails, heritage walks Clare">
+                    </figure>
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/school.jpg" 
+                             alt="Historic Sixmilebridge school building - educational heritage of County Clare" 
+                             title="The Old School Building - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">The Old School - Educational Heritage Building</figcaption>
+                        <meta itemprop="keywords" content="old Irish schools, Sixmilebridge education history, historic schools Clare">
+                    </figure>
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/logo.jpg" 
+                             alt="Sixmilebridge Historical Society emblem - preserving local heritage since 2020" 
+                             title="Society Emblem - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">Historical Society Emblem - Founded 2020</figcaption>
+                        <meta itemprop="keywords" content="historical society logo, Sixmilebridge heritage emblem">
+                    </figure>
+                    <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
+                        <img src="images/SMB Historical Society Logo-Jpg Mid Res.jpg" 
+                             alt="Official Sixmilebridge Historical Society logo - preserving County Clare heritage" 
+                             title="Official Society Logo - Click to enlarge"
+                             loading="lazy"
+                             width="400"
+                             height="300"
+                             itemprop="contentUrl">
+                        <figcaption itemprop="caption">Official Society Logo - Sixmilebridge Historical Society</figcaption>
+                        <meta itemprop="keywords" content="Sixmilebridge Historical Society, official logo, Clare heritage organization">
+                    </figure>
                     <!-- Add more images as available -->
                 </div>
             </div>

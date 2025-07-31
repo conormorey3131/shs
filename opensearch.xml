@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Sixmilebridge History</ShortName>
+    <Description>Search Sixmilebridge Historical Society for local history, events, and heritage information</Description>
+    <Tags>history ireland clare sixmilebridge heritage</Tags>
+    <Contact>info@sixmilebridgehistoricalsociety.ie</Contact>
+    <Url type="text/html" method="get" template="https://sixmilebridgehistoricalsociety.ie/search?q={searchTerms}"/>
+    <Url type="application/opensearchdescription+xml" rel="self" template="https://sixmilebridgehistoricalsociety.ie/opensearch.xml"/>
+    <LongName>Sixmilebridge Historical Society Search</LongName>
+    <Image height="16" width="16" type="image/png">https://sixmilebridgehistoricalsociety.ie/favicon-16x16.png</Image>
+    <Image height="64" width="64" type="image/png">https://sixmilebridgehistoricalsociety.ie/favicon-64x64.png</Image>
+    <Query role="example" searchTerms="Brendan O'Regan"/>
+    <Developer>Sixmilebridge Historical Society</Developer>
+    <Attribution>Search data from Sixmilebridge Historical Society</Attribution>
+    <SyndicationRight>open</SyndicationRight>
+    <AdultContent>false</AdultContent>
+    <Language>en-IE</Language>
+    <OutputEncoding>UTF-8</OutputEncoding>
+    <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

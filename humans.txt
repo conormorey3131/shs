@@ -1,0 +1,41 @@
+# humanstxt.org
+
+/* TEAM */
+Chairperson: Brendan
+Role: Historical Researcher
+Location: Sixmilebridge, County Clare, Ireland
+
+Heritage Guide: Alan
+Role: Heritage Walk Guide
+Location: Sixmilebridge, County Clare, Ireland
+
+Historian: Eoin
+Role: Local Historian
+Location: Sixmilebridge, County Clare, Ireland
+
+Community Lead: Pat
+Role: Community Outreach
+Location: Sixmilebridge, County Clare, Ireland
+
+Archivist: Crowe
+Role: Historical Documents Archivist
+Location: Sixmilebridge, County Clare, Ireland
+
+Advisor: Father O'Sullivan
+Role: Historical Advisor
+Location: Sixmilebridge, County Clare, Ireland
+
+/* THANKS */
+Name: Morey Digital
+Site: https://moreydigital.ie
+Role: Website Development
+
+Name: The people of Sixmilebridge
+Role: For preserving and sharing their stories
+
+/* SITE */
+Last update: 2025/01/31
+Standards: HTML5, CSS3, JavaScript ES6
+Components: Mobile-first design, Accessibility (WCAG 2.1 AA)
+Software: No CMS - Static HTML/CSS/JS
+Language: English / en-IE

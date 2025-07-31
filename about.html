@@ -3,20 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Sixmilebridge Historical Society</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>About Us - Sixmilebridge Historical Society | Founded 2020 | County Clare Ireland</title>
+    <meta name="description" content="Learn about Sixmilebridge Historical Society, founded in 2020 to preserve local heritage through research, exhibitions, heritage walks and community engagement in County Clare.">
+    <meta name="keywords" content="about Sixmilebridge Historical Society, local history Clare, Irish heritage preservation, Brendan O'Regan statue, historical research Ireland">
+    <meta name="author" content="Sixmilebridge Historical Society">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sixmilebridgehistoricalsociety.ie/about.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About Sixmilebridge Historical Society - Founded 2020">
+    <meta property="og:description" content="Learn about our mission to preserve and promote the rich history and heritage of Sixmilebridge and surrounding areas.">
+    <meta property="og:image" content="https://sixmilebridgehistoricalsociety.ie/images/SMB Historical Society Logo PNG.png">
+    <meta property="og:url" content="https://sixmilebridgehistoricalsociety.ie/about.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicons and Preloads -->
     <link rel="icon" href="images/SMB Historical Society Logo PNG.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"></noscript>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Sixmilebridge Historical Society",
+        "description": "Learn about our mission to preserve and promote the rich history and heritage of Sixmilebridge and its environs.",
+        "about": {
+            "@type": "Organization",
+            "name": "Sixmilebridge Historical Society",
+            "foundingDate": "2020",
+            "description": "A historical society dedicated to preserving local heritage through research, exhibitions, and community engagement."
+        }
+    }
+    </script>
 </head>
-<body>
-    <header>
+<body itemscope itemtype="https://schema.org/AboutPage">
+    <header role="banner">
         <div class="container">
             <div class="header-left">
-                <a href="index.html"><img src="images/SMB Historical Society Logo PNG.png" alt="Sixmilebridge Historical Society Logo" id="logo"></a>
+                <a href="index.html" aria-label="Sixmilebridge Historical Society Home"><img src="images/SMB Historical Society Logo PNG.png" alt="Sixmilebridge Historical Society Logo" id="logo" width="60" height="60"></a>
                 <h1>Sixmilebridge Historical Society</h1>
             </div>
-            <nav>
-                <div class="hamburger-menu">
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="hamburger-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -32,33 +67,90 @@
         </div>
     </header>
 
-    <main>
-        <section id="about-intro" class="fade-in-section">
+    <main role="main">
+        <section id="about-intro" class="fade-in-section" aria-labelledby="about-heading">
             <div class="container">
-                <h2>About the Sixmilebridge Historical Society</h2>
-                <p>Sixmilebridge Historical Society was founded in 2020 to preserve the rich heritage of our community. Through our projects such as the commissioning of the Brendan O’Regan statue, historical plaques, heritage walks and public lectures, we are helping to keep our local history alive and accessible for future generations. Through research, storytelling, and community engagement, we celebrate our unique legacy.</p>
+                <h2 id="about-heading">About the Sixmilebridge Historical Society</h2>
+                <p>Sixmilebridge Historical Society was founded in 2020 to preserve the rich heritage of our community. Through our projects such as the commissioning of the Brendan O'Regan statue, historical plaques, heritage walks and public lectures, we are helping to keep our local history alive and accessible for future generations. Through research, storytelling, and community engagement, we celebrate our unique legacy.</p>
             </div>
         </section>
 
-        <section id="mission" class="fade-in-section">
+        <section id="mission" class="fade-in-section" aria-labelledby="mission-heading">
             <div class="container">
-                <h3>Our Mission</h3>
+                <h3 id="mission-heading">Our Mission</h3>
                 <p>Our mission is to research, preserve, and promote the rich history and heritage of Sixmilebridge and its environs for the benefit of the community and future generations. We aim to foster an appreciation for local history through talks, exhibitions, publications, and community engagement.</p>
             </div>
         </section>
 
+        <section id="team" class="fade-in-section" aria-labelledby="team-heading">
+            <div class="container">
+                <h3 id="team-heading">Our Team</h3>
+                <p>Meet the dedicated volunteers who make our historical society possible:</p>
+                
+                <div class="team-grid">
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/brendan.jpg" alt="Brendan - Sixmilebridge Historical Society Team Member" loading="lazy">
+                        <h4 itemprop="name">Brendan</h4>
+                        <p itemprop="jobTitle">Historical Researcher</p>
+                    </div>
+                    
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/alan.jpg" alt="Alan - Sixmilebridge Historical Society Team Member" loading="lazy">
+                        <h4 itemprop="name">Alan</h4>
+                        <p itemprop="jobTitle">Heritage Walk Guide</p>
+                    </div>
+                    
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/eoin.jpg" alt="Eoin - Sixmilebridge Historical Society Team Member" loading="lazy">
+                        <h4 itemprop="name">Eoin</h4>
+                        <p itemprop="jobTitle">Local Historian</p>
+                    </div>
+                    
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/pat.jpg" alt="Pat - Sixmilebridge Historical Society Team Member" loading="lazy">
+                        <h4 itemprop="name">Pat</h4>
+                        <p itemprop="jobTitle">Community Outreach</p>
+                    </div>
+                    
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/crowe.jpg" alt="Crowe - Sixmilebridge Historical Society Team Member" loading="lazy">
+                        <h4 itemprop="name">Crowe</h4>
+                        <p itemprop="jobTitle">Archivist</p>
+                    </div>
+                    
+                    <div class="team-member" itemscope itemtype="https://schema.org/Person">
+                        <img src="images/priest.jpg" alt="Local Priest - Sixmilebridge Historical Society Supporter" loading="lazy">
+                        <h4 itemprop="name">Father O'Sullivan</h4>
+                        <p itemprop="jobTitle">Historical Advisor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="achievements" class="fade-in-section" aria-labelledby="achievements-heading">
+            <div class="container">
+                <h3 id="achievements-heading">Our Achievements</h3>
+                <ul>
+                    <li>Commissioned the Brendan O'Regan memorial statue</li>
+                    <li>Installed historical plaques throughout Sixmilebridge</li>
+                    <li>Organized monthly heritage walks</li>
+                    <li>Established a local history archive</li>
+                    <li>Hosted educational lectures and exhibitions</li>
+                    <li>Partnered with National Heritage Week celebrations</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="social-media-links">
                 <ul>
-                    <li><a href="https://www.facebook.com/sixmilebridgelocalhistory" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/sixmilebridgelocalhistory" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <p>&copy; 2025 Sixmilebridge Historical Society. All Rights Reserved.</p>

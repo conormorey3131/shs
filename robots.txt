@@ -1,0 +1,25 @@
+# Robots.txt for Sixmilebridge Historical Society
+# Website: https://sixmilebridgehistoricalsociety.ie
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://sixmilebridgehistoricalsociety.ie/sitemap.xml
+
+# Crawl-delay to be respectful to servers
+Crawl-delay: 1
+
+# Allow access to CSS and JS files for better indexing
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Block any potential admin or private areas (if they exist in future)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+
+# Additional directives for search engines
+# Cache: Public
+# Revisit-after: 7 days

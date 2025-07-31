@@ -1,58 +1,199 @@
-/* General Body Styles */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+/* Mobile-First CSS with Enhanced Performance */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* CSS Custom Properties for better maintainability */
+:root {
+    --color-primary: #3A4D39;
+    --color-secondary: #739072;
+    --color-accent: #A2C579;
+    --color-light: #ECE3CE;
+    --color-white: #ffffff;
+    --color-dark: #333333;
+    --color-gray: #f4f4f4;
+    --color-gray-dark: #555555;
+    
+    --font-serif: 'Merriweather', serif;
+    --font-sans: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 16px rgba(0,0,0,0.15);
+    
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+}
+
+/* Reset and base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-sans);
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    transition: opacity 0.5s ease-in-out; /* For page load fade-in */
+    background-color: var(--color-gray);
+    color: var(--color-dark);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+/* Mobile-first container */
 .container {
-    width: 85%;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
 }
 
-/* Header Styles */
-header .container { /* Apply flex to the container within the header */
+/* Animation utilities */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Mobile-first Header Styles */
+header {
+    background: var(--color-primary);
+    color: var(--color-light);
+    min-height: 70px;
+    border-bottom: 4px solid var(--color-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    animation: slideInDown 0.6s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px; /* Adjusted padding */
-    padding-bottom: 10px; /* Added padding */
+    padding-top: var(--spacing-xs);
+    padding-bottom: var(--spacing-xs);
+    min-height: 70px;
 }
 
-header {
-    background: #3A4D39; /* Dark Olive Green - inspired by historical/nature themes */
-    color: #ECE3CE; /* Light Beige/Cream for text */
-    /* padding-top: 20px; */ /* Removed, handled by container */
-    min-height: 70px; /* Adjusted min-height */
-    border-bottom: #739072 4px solid; /* Muted Green accent */
-    position: relative; /* For potential absolute positioning of mobile menu */
-}
-
-header .header-left { /* Group logo and title */
+header .header-left {
     display: flex;
     align-items: center;
+    animation: fadeInLeft 0.8s ease;
 }
 
 header #logo {
-    /* float: left; */ /* Removed float */
-    max-height: 60px; /* Adjusted max-height */
-    margin-right: 15px;
-    /* margin-top: -5px; */ /* Removed, flex handles alignment */
+    max-height: 50px;
+    margin-right: var(--spacing-sm);
+    transition: var(--transition-normal);
+    border-radius: var(--radius-sm);
+}
+
+header #logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
 }
 
 header h1 {
-    font-family: 'Merriweather', serif;
-    font-size: 26px; /* Slightly increased for impact */
-    font-weight: 700; /* Bold Merriweather */
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-weight: 700;
     margin: 0;
+    transition: var(--transition-normal);
+}
+
+header h1:hover {
+    color: var(--color-accent);
 }
 
 header nav {
@@ -530,5 +671,31 @@ header nav.mobile-nav-open ul li a {
     }
     footer p {
         font-size: 0.9em;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header nav,
+    .social-media-links,
+    .btn {
+        display: none;
+    }
+    
+    body {
+        background: white;
+        color: black;
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+    
+    section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+    
+    h1, h2, h3 {
+        page-break-after: avoid;
     }
 }

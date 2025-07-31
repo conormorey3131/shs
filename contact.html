@@ -3,20 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sixmilebridge Historical Society</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact Sixmilebridge Historical Society | Get In Touch | County Clare Ireland</title>
+    <meta name="description" content="Contact Sixmilebridge Historical Society. Join our community, ask questions about local history, or get involved with our heritage preservation efforts.">
+    <meta name="keywords" content="contact Sixmilebridge Historical Society, join historical society Clare, heritage preservation contact, Irish history society">
+    <meta name="author" content="Sixmilebridge Historical Society">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sixmilebridgehistoricalsociety.ie/contact.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Sixmilebridge Historical Society">
+    <meta property="og:description" content="Get in touch with us about local history, membership, or heritage preservation efforts.">
+    <meta property="og:image" content="https://sixmilebridgehistoricalsociety.ie/images/SMB Historical Society Logo PNG.png">
+    <meta property="og:url" content="https://sixmilebridgehistoricalsociety.ie/contact.html">
+    
+    <!-- Favicons and Preloads -->
     <link rel="icon" href="images/SMB Historical Society Logo PNG.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"></noscript>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Sixmilebridge Historical Society",
+        "description": "Get in touch with Sixmilebridge Historical Society for inquiries about local history, membership, or heritage preservation.",
+        "about": {
+            "@type": "Organization",
+            "name": "Sixmilebridge Historical Society"
+        }
+    }
+    </script>
 </head>
-<body>
-    <header>
+<body itemscope itemtype="https://schema.org/ContactPage">
+    <header role="banner">
         <div class="container">
             <div class="header-left">
-                <a href="index.html"><img src="images/SMB Historical Society Logo PNG.png" alt="Sixmilebridge Historical Society Logo" id="logo"></a>
+                <a href="index.html" aria-label="Sixmilebridge Historical Society Home"><img src="images/SMB Historical Society Logo PNG.png" alt="Sixmilebridge Historical Society Logo" id="logo" width="60" height="60"></a>
                 <h1>Sixmilebridge Historical Society</h1>
             </div>
-            <nav>
-                <div class="hamburger-menu">
+            <nav role="navigation" aria-label="Main navigation">
+                <div class="hamburger-menu" aria-label="Toggle navigation menu" role="button" tabindex="0">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -32,53 +64,100 @@
         </div>
     </header>
 
-    <main>
-        <section id="contact-info" class="fade-in-section">
+    <main role="main">
+        <section id="contact-info" class="fade-in-section" aria-labelledby="contact-heading">
             <div class="container">
-                <h2>Get In Touch</h2>
+                <h2 id="contact-heading">Get In Touch</h2>
                 <p>We'd love to hear from you! Whether you have a query about our society, an event, our collections, or wish to become a member, please don't hesitate to reach out.</p>
 
-                <div class="contact-details">
-                    <p><strong>Email:</strong> <a href="mailto:info@sixmilebridgehistoricalsociety.example.com">info@sixmilebridgehistoricalsociety.example.com</a> (Placeholder)</p>
+                <div class="contact-details" itemscope itemtype="https://schema.org/Organization">
+                    <p><strong>Email:</strong> <a href="mailto:info@sixmilebridgehistoricalsociety.example.com" itemprop="email">info@sixmilebridgehistoricalsociety.example.com</a> (Placeholder)</p>
+                    <p><strong>Location:</strong> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">Sixmilebridge</span>, 
+                        <span itemprop="addressRegion">County Clare</span>, 
+                        <span itemprop="addressCountry">Ireland</span>
+                    </span></p>
+                    <p><strong>Founded:</strong> <time datetime="2020" itemprop="foundingDate">2020</time></p>
+                </div>
             </div>
         </section>
 
-        <section id="contact-form-section" class="fade-in-section">
+        <section id="contact-form-section" class="fade-in-section" aria-labelledby="form-heading">
             <div class="container">
-                <h3>Send Us a Message</h3>
-                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                    <!-- Replace with your Access Key -->
+                <h3 id="form-heading">Send Us a Message</h3>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
                     <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <input type="hidden" name="subject" value="New Contact Form Submission from Historical Society Website">
+                    <input type="hidden" name="from_name" value="Sixmilebridge Historical Society Website">
 
-                    <label for="name">Full Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="name" name="name" required aria-describedby="name-error" autocomplete="name">
+                    </div>
 
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-describedby="email-error" autocomplete="email">
+                    </div>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel">
+                    </div>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6" required></textarea>
+                    <div class="form-group">
+                        <label for="inquiry-type">Type of Inquiry</label>
+                        <select id="inquiry-type" name="inquiry_type">
+                            <option value="">Please select...</option>
+                            <option value="membership">Membership Information</option>
+                            <option value="events">Events and Activities</option>
+                            <option value="research">Historical Research</option>
+                            <option value="volunteer">Volunteer Opportunities</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
 
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success"> <!-- Optional: Custom success page -->
-                    <button type="submit" class="btn">Send Message</button>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required" aria-label="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required aria-describedby="message-error" minlength="10" placeholder="Please tell us how we can help you..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I would like to receive updates about events and activities
+                        </label>
+                    </div>
+
+                    <input type="hidden" name="redirect" value="https://sixmilebridgehistoricalsociety.ie/thank-you.html">
+                    
+                    <button type="submit" class="btn" aria-describedby="form-help">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loading" style="display: none;">Sending...</span>
+                    </button>
                 </form>
-                <p><small>Note: This form will be functional once you replace "YOUR_ACCESS_KEY_HERE" with your actual Access Key from <a href="https://web3forms.com/" target="_blank">web3forms.com</a> or a similar service.</small></p>
+                
+                <p id="form-help"><small>
+                    <strong>Privacy Notice:</strong> Your information will only be used to respond to your inquiry and will not be shared with third parties. 
+                    Fields marked with <span class="required">*</span> are required.
+                </small></p>
+                
+                <p><small>Note: This form will be functional once you replace "YOUR_ACCESS_KEY_HERE" with your actual Access Key from <a href="https://web3forms.com/" target="_blank" rel="noopener noreferrer">web3forms.com</a>.</small></p>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="social-media-links">
                 <ul>
-                    <li><a href="https://www.facebook.com/sixmilebridgelocalhistory" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="X (formerly Twitter)"><i class="fab fa-x-twitter"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.facebook.com/sixmilebridgelocalhistory" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer" aria-label="Follow us on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <p>&copy; 2025 Sixmilebridge Historical Society. All Rights Reserved.</p>
